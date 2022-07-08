@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300.400');
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: rgb(12, 11, 11);
+}
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .50em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: end;
+    font-size: 1.1em;
+    font-weight: lighter;
+    
+}
+.main-nav li {
+    padding: 0 2%;
+}
+.nav a:hover{
+    background-color: rgba(255,255, 255, .3);
+}
+
+
+.main-header{
+    background-color: rgb(9, 190, 121);
+    background-image: url("Images/maxresdefault.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite
+}
+
+#slider figure img{
+    width: 50%;
+    float: left;
+}
+
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    90%{
+        left: -300%
+    }
+    100%{
+        left: -400%
+    }
+}
+
+.main-footer{
+    background-color: rgb(9, 190, 121);
+    color: white;
+    padding: .25em 0;
+}
+.main-footer-container{
+    display: inline;
+    align-items: center;
+    
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: left;
+}
+
+.footer-nav li{
+    padding: 0 .5em;
+}
+
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+}
